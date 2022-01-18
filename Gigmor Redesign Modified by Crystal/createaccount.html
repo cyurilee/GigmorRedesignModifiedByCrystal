@@ -7,8 +7,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/earnings.css">
-        <link rel="stylesheet" href="css/gigmor.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/createaccount.css">
                 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG2T48LCJ9"></script>
 <script>
@@ -24,7 +27,7 @@
     <body>
   
      <!-- Navigation bar -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light customNav2">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
       <a class="navbar-brand" href="index.html">Gigmor</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,22 +36,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Gigs</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Artists</a>
+            <a class="nav-link" href="#">English</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Managers</a>
+            <a class="btn btn-primary btn-lg navCTA signupbtn" href="" role="button">Sign Up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Community</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-primary btn-lg navCTA" href="" role="button">Sign Up</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-primary btn-lg navCTA2" href="" role="button">Login</a>
+            <a class="btn btn-primary btn-lg navCTA2 loginbtn" href="" role="button">Login</a>
           </li>
         </ul>
       </div>
@@ -59,31 +56,42 @@
 
     <div class="signup-form">
         <form action="/examples/actions/confirmation.php" method="post">
-            <h2>Create an Account</h2>
-            <p class="hint-text">Take control  of your career and book the gigs you’re excited about.
-                Create your account to get started.</p>
+            <h2 class="display-5">Create an Account</h2>
+            <p class="hint-text">Create a new account using:</p>
             <div class="social-btn text-center">
                 <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
                 <a href="#" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
                 <a href="#" class="btn btn-danger btn-lg"><i class="fa fa-google"></i> Google</a>
             </div>
             <div class="or-seperator"><b>or</b></div>
-            <div class="form-group">
-                <input type="text" class="form-control input-lg" name="username" placeholder="Username" required="required">
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control input-lg" name="confirm_password" placeholder="Confirm Password" required="required">
-            </div>  
-            <div class="form-group" style="text-align:center;">
-              <a class="btn btn-primary btn-lg navCTA" style="color:#fff; border:none;" href="artistmainpage.html" role="button">Sign Up</a>
-            </div>
-        </form>
+            <form>
+              <p class="hint-text">Sign up with email:</p>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I agree to the Terms & Conditions and Privacy Policy</label>
+              </div>
+              <div class="content">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <button class="btn btn-primary submitbtn navCTA">Submit</button>
+            </form>
+          </form>
         <div class="text-center">Already have an account? <a href="index.html">Login here</a></div>
     </div>
 </div>
