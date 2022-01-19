@@ -101,19 +101,19 @@ body {
   color: white;
   cursor: pointer;
 }
+.nav-link {
+  padding: 10px 0px;
+  align-items: center;
+  color: #969cba !important;
+}
 .nav-link:hover {
   color: #929cdd !important;
 }
-.sidebarlink:hover {
-  color: white !important;
-}
-.nav-link {
-  color: white !important;
-  padding: 10px 0px;
-  align-items: center;
-}
 .sidebarlink {
   color: #969cba !important;
+}
+.sidebarlink:hover {
+  color: white !important;
 }
 .activesidebar {
   background-color: #181a25 !important;
@@ -121,6 +121,12 @@ body {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   margin-left: 5px !important;
+}
+.activesidebar i {
+  color: #00c1cd;
+}
+.activesidebar p {
+  color: #00c1cd;
 }
 #sidebar {
   display: inline-block;
@@ -154,38 +160,17 @@ body {
 }
 
 /*Back/Forward button and searchbar*/
-.searchbar {
-  background-color: #181a25 !important;
-}
 .backforthsearch {
-  padding-top: 80px !important;
   align-items: center;
-}
-.form-inline {
-  margin: 0px !important;
-  padding: 0px !important;
-  background-color: transparent !important;
-  border-color: transparent !important;
-  box-shadow: none !important;
-  display: flex;
-  align-content: center !important;
-}
-.form-control {
-  background-color: #202231;
-  color: #848ecb;
-}
-input {
-  background-color: #202231 !important;
-  color: #848ecb;
-  border-color: transparent !important;
 }
 .movepagesbtn {
   background-color: #12131b !important;
-  color: white !important;
+  color: #7d90b2 !important;
   border-color: none !important;
 }
-.searchform {
-  display: flex;
+.fa-globe-americas {
+  color: #00c1cd;
+  padding: 10px;
 }
 
 /* Earnings Page */
@@ -385,6 +370,7 @@ h6,
 p,
 br {
   font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 0;
 }
 /* Footer */
 .emailContain {

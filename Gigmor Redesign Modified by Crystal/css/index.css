@@ -35,7 +35,7 @@ body {
   padding: 0px 10px;
 }
 .nav-link {
-  color: #fff !important;
+  color: #fff;
 }
 .nav-link:hover {
   color: #727aae !important;
@@ -83,7 +83,8 @@ br {
   background-color: #0094b6 !important;
   border: none !important;
   border-radius: 5px !important;
-  padding: 10px 55px;
+  width: 185px;
+  padding: 10px 0px;
 }
 .navCTA2 {
   font-family: "Source Sans Pro", sans-serif;
@@ -91,7 +92,8 @@ br {
   background-color: transparent !important;
   border-radius: 5px !important;
   border-color: #fff;
-  padding: 10px 55px;
+  width: 185px;
+  padding: 10px 0px;
 }
 
 /* Jumbotron  */
@@ -342,10 +344,14 @@ footer {
   font-size: 16px;
   transition: all 0.4s;
   box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: #727aae;
 }
 .form-control:focus {
-  border-color: #5cb85c;
+  border-color: #00c1cd;
+  background-color: rgba(0, 0, 0, 0.3);
 }
+
 .signup-form form {
   border-radius: 5px;
   margin-bottom: 20px;
@@ -354,7 +360,7 @@ footer {
   padding: 40px;
 }
 .signup-form a {
-  color: #5cb85c;
+  color: white;
 }
 .signup-form h2 {
   text-align: center;
@@ -374,15 +380,7 @@ footer {
   line-height: 26px;
   padding: 10px 60px;
 }
-.signup-btn {
-  text-align: center;
-  border-color: #5cb85c;
-  transition: all 0.4s;
-}
-.signup-btn:hover {
-  background: #5cb85c;
-  opacity: 0.8;
-}
+
 .or-seperator {
   margin: 50px 0 15px;
   text-align: center;
@@ -420,24 +418,24 @@ footer {
   margin-left: 0;
 }
 .btn-primary {
-  background: #0094b6;
+  background: #00c1cd;
 }
 .btn:hover {
   background: #727aae !important;
 }
-.social-btn .btn-info {
-  background: #64ccf1;
+.btn-info {
+  background: #3fbbe9;
 }
-.social-btn .btn-danger {
+.btn-danger {
   background: #df4930;
+}
+.btn-blue {
+  background: #1877f2;
 }
 .social-btn .btn i {
   float: left;
   margin: 3px 10px;
   font-size: 20px;
-}
-.submitbtn {
-  display: flex;
 }
 
 @media only screen and (max-width: 768px) {

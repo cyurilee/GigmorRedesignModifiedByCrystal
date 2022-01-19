@@ -1,0 +1,25 @@
+/*Searchbar*/
+.searchbar {
+  background-color: #181a25 !important;
+}
+.form-inline {
+  margin: 0px !important;
+  padding: 0px !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  display: flex;
+  align-content: center !important;
+}
+.form-control {
+  background-color: #202231;
+  color: #848ecb;
+}
+input {
+  background-color: #202231 !important;
+  color: #848ecb;
+  border-color: transparent !important;
+}
+.searchform {
+  display: flex;
+}

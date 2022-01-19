@@ -71,7 +71,7 @@ h3 {
 }
 p {
   font-family: "Source Sans Pro", sans-serif;
-  color: #fff;
+  margin-bottom: 0;
 }
 .contentHer h2 {
   font-family: "Source Sans Pro", sans-serif;
@@ -267,7 +267,6 @@ footer {
   background-color: #181a25 !important;
 }
 .backforthsearch {
-  padding-top: 80px !important;
   align-items: center;
 }
 .form-inline {
