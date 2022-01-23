@@ -20,7 +20,6 @@ body {
   z-index: 10;
   font-family: "Source Sans Pro", sans-serif;
 }
-.navbar-nav {
   margin-left: auto;
   margin-right: 0 !important;
 }
@@ -54,14 +53,16 @@ body {
   padding: 0px 10px;
 }
 .navbar {
-  background-color: #373b53 !important;
+  background-color: #282b3e !important;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
 }
 .nav-item {
   padding: 0px;
   margin: 0px !important;
 }
 .sidebar-nav {
-  position: -webkit-sticky;
   position: sticky;
   top: 80px;
 }
@@ -82,6 +83,10 @@ body {
   background-color: transparent !important;
   border-radius: 6px !important;
   border-color: #fff;
+}
+.fa-lock {
+  padding-right: 10px;
+  color: #727aae;
 }
 .helpme {
   position: fixed;
@@ -132,7 +137,7 @@ body {
   display: inline-block;
   text-align: center;
   padding: 0px;
-  background-color: #373b53;
+  background-color: #282b3e;
   background-size: cover;
 }
 .flex-column {
@@ -386,7 +391,7 @@ br {
 
 /* Footer form */
 form {
-  width: 500px;
+  width: 100%;
   margin: 35px auto;
   padding: 45px;
   border: 1px solid #f2f2f2;
@@ -410,7 +415,7 @@ footer {
 }
 
 .footerBar {
-  background-color: #373b53;
+  background-color: #181a25;
   justify-content: space-between;
   align-items: flex-start;
   padding: 35px;
@@ -588,29 +593,46 @@ footer {
   #sidebar {
     display: none !important;
   }
+  .showbottombarformobile {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #282b3e !important;
+    z-index: 10;
+  }
+  .active {
+    background-color: transparent !important;
+  }
+  .active p {
+    color: #00c1cd;
+  }
+  .active i {
+    color: #00c1cd;
+  }
+  .active:hover {
+    color: #181a25 !important;
+  }
+  .movepagesbtn {
+    display: none;
+  }
+  .navbar-toggler {
+    padding: 0.5rem;
+    margin-right: 20px;
+  }
+  .navbar-content {
+    display: inline-flex;
+  }
+  .fa-chevron-down {
+    display: none;
+  }
+  .customNav2 {
+    padding: 0px 16px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   /* For mobile phones: */
   .showbottombarformobile {
     display: none !important;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .showbottombarformobile {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    background-color: #373b53 !important;
-    z-index: 5;
-  }
-  .active {
-    background-color: #929cdd !important;
-    color: white;
-  }
-  .active:hover {
-    color: #373b53 !important;
   }
 }
