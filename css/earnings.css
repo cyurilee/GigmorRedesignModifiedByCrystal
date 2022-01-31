@@ -597,18 +597,19 @@ footer {
     background-color: #282b3e !important;
     z-index: 10;
   }
-  .active {
+  .activemobilebar {
     background-color: transparent !important;
   }
-  .active p {
+  .activemobilebar p {
     color: #00c1cd;
   }
-  .active i {
+  .activemobilebar i {
     color: #00c1cd;
   }
-  .active:hover {
+  .activemobilebar:hover {
     color: #181a25 !important;
   }
+
   .movepagesbtn {
     display: none;
   }
