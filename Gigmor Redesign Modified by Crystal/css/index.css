@@ -101,7 +101,7 @@ br {
   background-image: url(../images/herohomeimg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 25px);
+  height: calc(100vh);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,6 +116,9 @@ br {
   color: white;
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
+}
+.jumbotronbtn {
+  width: 270px;
 }
 
 /* Cards */
@@ -344,12 +347,15 @@ footer {
   font-size: 16px;
   transition: all 0.4s;
   box-shadow: none;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   border-color: #727aae;
 }
 .form-control:focus {
   border-color: #00c1cd;
   background-color: rgba(0, 0, 0, 0.3);
+}
+.active {
+  background-color: #0094b6 !important;
 }
 
 .signup-form form {
@@ -422,6 +428,9 @@ footer {
 }
 .btn:hover {
   background: #727aae !important;
+}
+.btn-xl {
+  display: flex;
 }
 .btn-info {
   background: #3fbbe9;

@@ -13,12 +13,18 @@ h1 {
 }
 h2 {
   font-family: "Source Sans Pro", sans-serif;
-  color: #3f4b5e;
+  color: white;
   background-color: #181a25;
   font-weight: bold;
 }
+h5 {
+  line-height: 1.5;
+}
+p {
+  color: #dadada;
+}
 
-/* Aritst Main Dashboard */
+/* Aritst Jumbotron */
 .artistjumbotron {
   background-image: url(../images/Header.png);
   background-position: center;
@@ -60,8 +66,46 @@ h2 {
 .profileContent {
   padding-top: 20px;
 }
+/* End Aritst Jumbotron */
 
-/* End Aritst Main Dashboard */
+/* Playlist Container */
+.playlistContainer {
+  background-color: #282b3e;
+}
+.playlistContainer img {
+  padding: 20px;
+}
+.albumInfo {
+  padding: 20px;
+}
+.play-btn {
+  border-radius: 50%;
+}
+/* End Playlist Container */
+
+/* Availability Calendar Container */
+/* End Availability Calendar Container */
+
+/* Previous Gigs Container */
+/* End Previous Gigs Container */
+
+/* Get in Touch Container */
+/* End Get in Touch Container */
+
+/* Upcoming Shows Container */
+/* End Upcoming showsContainer */
+
+/* Private Container */
+/* End Private Container */
+
+/* Private Calendar Container */
+/* End Private Calendar Container */
+
+/* Private Gigs Near You Container */
+/* End Private Gigs Near You Container */
+
+/* Private Container */
+/* End Private Container */
 
 /* Footer */
 footer {
