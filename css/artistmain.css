@@ -6,23 +6,6 @@ body {
 html {
   background-color: #181a25;
 }
-h1 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
-  color: #fff;
-}
-h2 {
-  font-family: "Source Sans Pro", sans-serif;
-  color: white;
-  background-color: #181a25;
-  font-weight: bold;
-}
-h5 {
-  line-height: 1.5;
-}
-p {
-  color: #dadada;
-}
 
 /* Aritst Jumbotron */
 .artistjumbotron {
@@ -47,10 +30,7 @@ p {
 .flex-container {
   display: flex;
 }
-.fab,
-.fas {
-  padding: 8px;
-}
+
 .fab:hover {
   cursor: pointer;
   color: #929cdd;
@@ -127,10 +107,10 @@ p {
 .card {
   display: grid;
   place-content: center;
-  background-color: transparent;
+  background-color: transparent !important;
   color: #15928a;
   font-size: 1.5rem;
-  height: 10rem;
+  height: 15rem;
   min-width: 15rem;
   border: 0px;
 }
