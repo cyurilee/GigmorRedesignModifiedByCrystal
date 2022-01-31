@@ -146,51 +146,153 @@
 <!--End Artist Profile Jumbotron-->
 
 <!--Playlist-->
-<div class="container">
+<div class="container-fluid">
 
   <div class="row row1">
-    <div class="col-10">
+    <div class="col-sm-4 col-md-8">
       <h2>Playlist</h2>
+
       <div class="playlistContainer">
-        <div class="flex-container">  
-          <div>
-            <img src="images/Red Snapper Album Cover.png" alt="Red Snapper Album Image">
-          </div>
-          <div class="albumInfo">
-            <h5>Red Snapper</h5>
-            <p>Album</p>
-            <button type="button" class="btn btn-primary play-btn">Primary</button>
-          </div>
+
+        <div class="songs">
+          <iframe src="https://open.spotify.com/embed/artist/65QuZjzUE15MtrXAAhtcrS?utm_source=generator&amp;theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>        
         </div>
+
       </div>
     </div>
-    <div class="col availabilityContainer">
-      Availability Calendar
+
+    <div class="col-sm-4 col-md-4">
+      <h2>Availability</h2>
+
+      <div class="availabilityContainer">
+      
+        <form class="myCalendar">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Location</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Location">
+          </div>
+
+          <div class="form-group">
+            <label for="start">Start date:</label>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2022-01-01" max="2022-12-31">
+            <br>
+            <label for="start">End date:</label>
+            <input type="date" id="end" name="trip-end" value="2018-07-22" min="2022-01-01" max="2022-12-31">
+          </div>
+
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> 8:30 PM
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> 10:30 PM
+            </label>
+          </div>
+
+          <p>Currently Available!</p>
+
+          <div class="content">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary navCTA">Send a Request</button>
+
+        </form>
+
+      </div>              
     </div>
   </div>
 
   <div class="row row2">
-    <div class="col-6 previousGigsContainer">
-      Previous gigs
+    <div class="col">
+      <h2>Previous Gigs</h2>
+
+      <div class="previousGigsContainer">
+        <div class="cards-wrapper">
+          <div class="card"><h2><img src="images/Group 102.png"></h2></div>
+          <div class="card"><h2><img src="images/Group 336.png"></h2></div>
+          <div class="card"><h2><img src="images/Group 100.png"></h2></div>
+          <div class="card"><h2><img src="images/group 103.png"></h2></div>
+          <div class="card"><h2><img src="images/Group 352.png"></h2></div>
+          <div class="card"><h2><img src="images/Group 102.png"></h2></div>
+          <div class="card"><h2><img src="images/Group 336.png"></h2></div>
+          <div class="card"><h2><img src="images/group 100.png"></h2></div>
+        </div>
+      </div>
+
     </div>
   </div>
 
   <div class="row row3">
-    <div class="col-10 getInTouchContainer">
-      Get in touch
+    <div class="col-sm-4 col-md-8">
+      <h2>Get in touch</h2>
+
+      <div class="getInTouchContainer">
+        <form class="messageForm">
+          <div class="row">
+            <div class="col">
+              <label for="exampleFormControlTextarea1">Your name</label>
+              <input type="text" class="form-control" placeholder="Your name">
+            </div>
+            <div class="col">
+              <label for="exampleFormControlTextarea1">Subject</label>
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+          </div>
+        
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <div class="content">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <a class="btn btn-primary btn-lg text-center submitbtn navCTA" href="artistmainpage.html" role="button">Send message</a>
+
+        </form>
+      </div>
+
     </div>
-    <div class="col upcomingShowsContainer">
-      Upcoming Shows
+
+    <div class="col-sm-4 col-md-4">
+      <h2>Upcoming Shows</h2>
+
+      <div class="upcomingShowsContainer">
+        <img src="images/Group 328.png" alt="">
+      </div>
+      
     </div>
   </div>
 
   <div class="row row4">
-    <div class="col-6 Calendar Container">
-      Private
-      Calendar
-    </div>
-    <div class="col-6">
-      Gigs Near You
+    <div class="col">
+      <h2>Private</h2>
+      <div class="row privateContainer container-fluid">
+
+        <div class="col">
+          <div class="privateCalendar">
+            <h4>My Calendar</h4>
+            <img src="images/Group 354.png" alt="">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="privateGigsNearby">
+            <h4>Gigs Near Me</h4>
+            <img src="images/Group 353.png" alt="">
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 

@@ -241,8 +241,7 @@ br {
 /* Footer form */
 form {
   width: 500px;
-  margin: 35px auto;
-  padding: 45px;
+  margin: auto;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
     0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -356,6 +355,7 @@ footer {
 }
 .active {
   background-color: #0094b6 !important;
+  color: white !important;
 }
 
 .signup-form form {
@@ -378,9 +378,7 @@ footer {
   text-align: center;
   margin-bottom: 20px;
 }
-.signup-form .form-group {
-  margin-bottom: 20px;
-}
+
 .signup-form {
   font-size: 18px;
   line-height: 26px;
@@ -426,6 +424,7 @@ footer {
 .btn-primary {
   background: #00c1cd;
 }
+
 .btn:hover {
   background: #727aae !important;
 }
